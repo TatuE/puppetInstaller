@@ -3,13 +3,13 @@ sudo apt-get update
 
 sudo apt-get install -y puppet git
 
-git clone https://github.com/TatuE/puppetSlaver.git
+git clone https://github.com/TatuE/puppetslaver.git
 
-sudo cp -r puppetSlaver /etc/puppet/modules/
+sudo cp -r puppetslaver /etc/puppet/modules/
 
 cd /etc/puppet/
 
-sudo puppet apply --modulepath modules/ -e 'class {"puppetSlaver":}'
+sudo puppet apply --modulepath modules/ -e 'class {"puppetslaver":}'
 
 
 echo " "
