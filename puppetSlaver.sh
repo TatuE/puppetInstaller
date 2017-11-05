@@ -9,7 +9,7 @@ sudo cp -r puppetSlaver /etc/puppet/modules/
 
 cd /etc/puppet/
 
-puppet apply --modulepath modules/ -e 'class {"puppetSlaver":}'
+sudo puppet apply --modulepath modules/ -e 'class {"puppetSlaver":}'
 
 
 echo " "
