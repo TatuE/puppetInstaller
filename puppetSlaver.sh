@@ -12,6 +12,7 @@ cd /etc/puppet/
 sudo puppet apply --modulepath modules/ -e 'class {"puppetslaver":}'
 
 sudo service puppet restart
+sudo puppet agent --enable
 
 echo " "
 echo "Slaving complete!"
