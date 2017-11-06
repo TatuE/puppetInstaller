@@ -11,6 +11,7 @@ cd /etc/puppet/
 
 sudo puppet apply --modulepath modules/ -e 'class {"puppetslaver":}'
 
+sudo service puppet restart
 
 echo " "
 echo "Slaving complete!"
